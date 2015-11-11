@@ -4,6 +4,18 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    render text: "hello, world!"
+    render text: "こんにちは!"
+  end
+
+  def good_morning
+    render text: "おはよう!"
+  end
+
+  def good_evening
+    render text: "こんばんは!"
+  end
+
+  def goodbye
+    render text: "さよなら!"
   end
 end
